@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+
+:root{
+    --main-color:#be9c79;
+    --black:#333;
+    --white:#fff;
+    --light-color:#666;
+    --border:.2rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    /* border: 1px solid red; */
+}
+
+*::selection{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+
+::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+html{
+    font-size: 62.5%;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+section{
+    /* background-color: aqua; */
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.heading img{
+    height: 3rem;
+}
+
+.heading h3{
+    font-size: 4rem;
+    color: var(--black);
+    font-family: 'Merienda One', cursive;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--main-color);
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+}
+
+.btn:hover{
+    background-color: var(--black);
+}
+
+header{
+    position: sticky;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+header .header{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+}
+
+header .header .logo img{
+    height: 4.5rem;
+}
+
+header .header .navbar a{
+    /* background-color: red; */
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+header .header .navbar a:hover{
+    text-decoration: underline;
+    color: var(--main-color);
+}
+.home-bg{
+    background:linear-gradient( 90deg, var(--white), transparent 70%), url(images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-bg .home{
+    height: 70rem;
+    display: flex;
+    align-items: center;
+}
+
+.home-bg .home .content{
+    /* background-color: violet; */
+    width: 50rem;
+    text-align: center;
+}
+
+.home-bg .home .content h3{
+    /* background-color: greenyellow; */
+    font-size: 6rem;
+    font-family: 'Merienda One', cursive;
+    color: var(--black);
+}
+
+.home-bg .home .content p{
+    /* background-color: orange; */
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--black);
+    line-height: 2;
+}
+.about{
+    /* background-color: violet; */
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 4rem;
+}
+
+.about .image{
+    /* background-color: red; */
+    flex:1 40rem;
+}
+
+.about .image img{
+    height: 100%;
+    width: 100%;
+}
+
+.about .content{
+    flex: 1 40rem;
+}
+
+.about .content h3{
+    /* background-color: greenyellow; */
+    font-size: 4.5rem;
+    color: var(--black);
+    font-family: 'Merienda One', cursive;
+    padding-bottom: 1rem;
+}
+
+.about .content p{
+    /* background-color: rebeccapurple; */
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.facility .boxcontainer{
+    display: flex;
+    justify-items: space-between;
+    gap: 1.5rem;
+}
+
+.facility .boxcontainer .box{
+    text-align: center;
+}
+
+.facility .boxcontainer .box img{
+    height: 10rem;
+    margin-bottom: .5rem;
+}
+
+.facility .boxcontainer .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    margin: 1rem 0;
+}
+
+.facility .boxcontainer .box p{
+    line-height: 2;
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+
+.menu .boxcontainer, .menu .boxcontainer1{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu .boxcontainer .box, .menu .boxcontainer1 .box{
+    text-align: center;
+}
+
+.menu .boxcontainer .box img, .menu .boxcontainer1 .box img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.menu .boxcontainer .box h3, .menu .boxcontainer1 .box h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.gallery .boxcontainer, .gallery .boxcontainer1{
+    height: 34vh;
+    width: 88%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: auto;
+}
+
+.gallery .boxcontainer img, .gallery .boxcontainer1 img{
+    height: 100%;
+    width: 32.4%;
+    object-fit: cover;
+}
+
+.gallery .boxcontainer1{
+    margin-top: 1.5rem;
+}
+
+.team .boxcontainer, .team .boxcontainer1{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 46.5vh;
+    width: 88%;
+    gap: 1.5rem;
+}
+
+.team .boxcontainer .box img, .team .boxcontainer1 .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.team .boxcontainer1{
+    margin-top: 4.5rem;
+}
+
+.team .boxcontainer .box, .team .boxcontainer1 .box{
+    width: 33.3%;
+    text-align: center;
+}
+
+.team .boxcontainer .box h3, .team .boxcontainer1 .box h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+}
+
+.contact .row .image{
+    flex: 1 50rem;
+}
+
+/* .contact .row .image img{
+    width: 100%;
+} */
+
+.contact .row form{
+    flex: 1 30rem;
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.contact .row form .box{
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    border: var(--border);
+    margin: 1rem 0;
+}
+
+.footer .boxcontainer{
+    display: flex;
+    height: 30vh;
+    width: 100%;
+}
+
+.footer .boxcontainer .box{
+    height: 100%;
+    width: 25%;
+    text-align: center;
+}
+
+.footer .boxcontainer .box i{
+    font-size: 2rem;
+    line-height: 6rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.footer .boxcontainer .box h3{
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.footer .boxcontainer .box p{
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+
+.footer .credit{
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: var(--border);font-size: 2rem;
+    color: var(--black);
+}
+
+.footer .credit span{
+    color: var(--main-color);
+}
